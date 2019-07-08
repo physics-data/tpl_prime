@@ -68,7 +68,7 @@ if __name__ == '__main__':
         if success:
             success_count += 1
             if os.isatty(1):
-                print('Testcase {}: PASS'.format(input))
+                print('Testcase {}: PASS using {:.2f} seconds'.format(input, time.time() - start_time))
         else:
             if os.isatty(1):
                 print('Testcase {}: {}'.format(input, message))
